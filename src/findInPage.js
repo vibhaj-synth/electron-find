@@ -409,7 +409,7 @@ function onKeydown (e) {
       let text = this[findInput].value
       if (!text) return
       // e.shiftKey ? findKeep.call(this, false) : findKeep.call(this, true)
-      e.shiftKey ? this[findForward].click() : this[findBack].click();
+      e.shiftKey ? this[findBack].click() : this[findForward].click();
       break
     case 'Escape':
       onCloseClick.call(this)
